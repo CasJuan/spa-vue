@@ -17,7 +17,7 @@
     <!-- Fin Header -->
 
     <!-- Main -->
-    <main class="flex-1 flex items-center justify-center py-6">
+    <main class="flex-1 flex items-center justify-center">
       <RoutersView />
     </main>
     <!-- Fin Main -->
