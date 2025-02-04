@@ -1,13 +1,13 @@
 <template>
-  <h1 class="text-2xl font-semibold mb-4">Login</h1>
+  <h1 class="text-2xl font-semibold mb-4">Register</h1>
   <form action="#" method="POST">
     <!-- Username Input -->
     <div class="mb-4">
-      <label for="username" class="block text-gray-600">Username</label>
+      <label for="name" class="block text-gray-600">Name</label>
       <input
         type="text"
-        id="username"
-        name="username"
+        id="name"
+        name="name"
         class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
         autocomplete="off"
       />
@@ -42,6 +42,6 @@
   </form>
   <!-- Sign up  Link -->
   <div class="mt-6 text-blue-500 text-center">
-    <router-link :to="{ name: 'register' }" class="hover:underline"> Sign up Here </router-link>
+    <router-link :to="{ name: 'login' }">Login in Here</router-link>
   </div>
 </template>
