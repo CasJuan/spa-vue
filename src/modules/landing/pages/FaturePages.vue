@@ -1,129 +1,93 @@
 <template>
   <!-- component -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <body class="font-sans bg-gray-100">
-    <div class="min-h-screen flex justify-center items-center">
-      <div class="">
-        <div class="text-center font-semibold">
-          <h1 class="text-5xl">
-            <span class="text-blue-700 tracking-wide">Flexible </span>
-            <span>Plans</span>
-          </h1>
-          <p class="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full">
-            Choose a plan that works best for you and<br />
-            your team.
-          </p>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+          Master Cleanse Reliac Heirloom
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
+          farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies
+          heirloom prism food truck ugh squid celiac humblebrag.
+        </p>
+      </div>
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="text-blue-500 w-12 h-12 mb-3 inline-block"
+              viewBox="0 0 24 24"
+            >
+              <path d="M8 17l4 4 4-4m-4-5v9"></path>
+              <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
+            <p class="leading-relaxed">Downloads</p>
+          </div>
         </div>
-        <div class="pt-24 flex flex-row">
-          <!-- Basic Card -->
-          <div class="w-96 p-8 bg-white text-center rounded-3xl pr-16 shadow-xl">
-            <h1 class="text-black font-semibold text-2xl">Basic</h1>
-            <p class="pt-2 tracking-wide">
-              <span class="text-gray-400 align-top">$ </span>
-              <span class="text-3xl font-semibold">10</span>
-              <span class="text-gray-400 font-medium">/ user</span>
-            </p>
-            <hr class="mt-4 border-1" />
-            <div class="pt-8">
-              <p class="font-semibold text-gray-400 text-left">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2">
-                  Get started with <span class="text-black">messaging</span>
-                </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2"> Flexible <span class="text-black">team meetings</span> </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2"> <span class="text-black">5 TB</span> cloud storage </span>
-              </p>
-
-              <a href="#" class="">
-                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
-                  <span class="font-medium"> Choose Plan </span>
-                  <span class="pl-2 material-icons align-middle text-sm"> east </span>
-                </p>
-              </a>
-            </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="text-blue-500 w-12 h-12 mb-3 inline-block"
+              viewBox="0 0 24 24"
+            >
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-gray-900">1.3K</h2>
+            <p class="leading-relaxed">Users</p>
           </div>
-          <!-- StartUp Card -->
-          <div
-            class="w-80 p-8 bg-gray-900 text-center rounded-3xl text-white border-4 shadow-xl border-white transform scale-125"
-          >
-            <h1 class="text-white font-semibold text-2xl">Startup</h1>
-            <p class="pt-2 tracking-wide">
-              <span class="text-gray-400 align-top">$ </span>
-              <span class="text-3xl font-semibold">24</span>
-              <span class="text-gray-400 font-medium">/ user</span>
-            </p>
-            <hr class="mt-4 border-1 border-gray-600" />
-            <div class="pt-8">
-              <p class="font-semibold text-gray-400 text-left">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2"> All features in <span class="text-white">Basic</span> </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2"> Flexible <span class="text-white">call scheduling</span> </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2"> <span class="text-white">15 TB</span> cloud storage </span>
-              </p>
-
-              <a href="#" class="">
-                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
-                  <span class="font-medium"> Choose Plan </span>
-                  <span class="pl-2 material-icons align-middle text-sm"> east </span>
-                </p>
-              </a>
-            </div>
-            <div class="absolute top-4 right-4">
-              <p class="bg-blue-700 font-semibold px-4 py-1 rounded-full uppercase text-xs">
-                Popular
-              </p>
-            </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="text-blue-500 w-12 h-12 mb-3 inline-block"
+              viewBox="0 0 24 24"
+            >
+              <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+              <path
+                d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
+              ></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
+            <p class="leading-relaxed">Files</p>
           </div>
-          <!-- Enterprise Card -->
-          <div class="w-96 p-8 bg-white text-center rounded-3xl pl-16 shadow-xl">
-            <h1 class="text-black font-semibold text-2xl">Enterprise</h1>
-            <p class="pt-2 tracking-wide">
-              <span class="text-gray-400 align-top">$ </span>
-              <span class="text-3xl font-semibold">35</span>
-              <span class="text-gray-400 font-medium">/ user</span>
-            </p>
-            <hr class="mt-4 border-1" />
-            <div class="pt-8">
-              <p class="font-semibold text-gray-400 text-left">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2"> All features in <span class="text-black">Startup</span> </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2"> Growth <span class="text-black">oriented</span> </span>
-              </p>
-              <p class="font-semibold text-gray-400 text-left pt-5">
-                <span class="material-icons align-middle"> done </span>
-                <span class="pl-2"> <span class="text-black">Unlimited</span> cloud storage </span>
-              </p>
-
-              <a href="#" class="">
-                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
-                  <span class="font-medium"> Choose Plan </span>
-                  <span class="pl-2 material-icons align-middle text-sm"> east </span>
-                </p>
-              </a>
-            </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="text-blue-500 w-12 h-12 mb-3 inline-block"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-gray-900">46</h2>
+            <p class="leading-relaxed">Places</p>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </section>
 </template>
