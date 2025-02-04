@@ -1,3 +1,4 @@
+import NotFound404 from '@/modules/common/pages/NotFound404.vue'
 import HomePage from '@/modules/landing/pages/HomePage.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -38,16 +39,21 @@ const router = createRouter({
       component: () => import('../modules/auth/layouts/AuthLayout.vue'),
       children: [
         {
-          path: '/login',
+          path: 'login',
           name: 'login',
           component: () => import('../modules/auth/pages/LoginPage.vue'),
         },
         {
-          path: '/register',
+          path: 'register',
           name: 'register',
           component: () => import('../modules/auth/pages/RegisterPage.vue'),
         },
       ],
+    },
+    //not found
+    {
+      path: '/:pathMatch(.*)*',
+      component: NotFound404,
     },
   ],
 })
