@@ -30,6 +30,12 @@ const router = createRouter({
           name: 'contact',
           component: () => import('../modules/landing/pages/ContactPage.vue'),
         },
+        {
+          path: '/pokemon/:id',
+          name: 'pokemon',
+          props: true,
+          component: () => import('../modules/pokemons/pages/PokemonPage.vue'),
+        },
       ],
     },
     //atuh
