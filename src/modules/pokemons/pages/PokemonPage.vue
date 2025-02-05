@@ -11,7 +11,7 @@
 
     <router-link
       class="bg-blue-500 text-white p-2 rounded-md mt-5 text-center hover:bg-blue-800"
-      :to="{ name: 'pokemon', params: { id: id + 1 } }"
+      :to="{ name: 'pokemon', params: { id: +id + 1 } }"
       >Siguiente</router-link
     >
   </section>
