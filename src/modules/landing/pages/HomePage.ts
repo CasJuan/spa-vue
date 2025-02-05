@@ -7,11 +7,14 @@ import {
   onRenderTracked,
   onActivated,
   onDeactivated,
+  ref,
 } from 'vue'
 
 export default defineComponent({
   setup: () => {
     console.log('setup')
+
+    const counter = ref(0)
 
     onMounted(() => {
       console.log('onMounted')
@@ -35,5 +38,9 @@ export default defineComponent({
     onDeactivated(() => {
       console.log('onDeactivated')
     })
+
+    return {
+      counter,
+    }
   },
 })
